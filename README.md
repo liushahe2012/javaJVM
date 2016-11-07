@@ -21,6 +21,8 @@ Heap dump file created [27963980 bytes in 0.094 secs]
 OOM异常很 常见，当出现java堆内存溢出时，异常堆栈信息“ java.lang.OutOfMemoryError” 后跟提示：“Java heap space”
 
 
+
+
 2.JavaVMStackSOF目录
 
 测试虚拟机栈和本地方法栈溢出
