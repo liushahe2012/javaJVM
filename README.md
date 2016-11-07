@@ -18,3 +18,23 @@ Dumping heap to java_pid12344.hprof ...
 Heap dump file created [27963980 bytes in 0.094 secs]
 
 OOM异常很 常见，当出现java堆内存溢出时，异常堆栈信息“ java.lang.OutOfMemoryError” 后跟提示：“Java heap space”
+
+
+2.JavaVMStackSOF目录
+
+测试虚拟机栈和本地方法栈溢出
+
+设置启动参数： -verbose:gc -Xss128k
+
+在hotspot中，虚拟机栈和本地方法栈是同一个，没有分开
+
+栈容量只由-Xss参数设定
+
+如果线程请求的栈深度大于虚拟机所允许的最大深度，则抛出StackOverflowError异常。
+
+运行结果：
+
+stack length:1541
+Exception in thread "main" java.lang.StackOverflowError
+	at JavaVＭStackSOF.stackLeak(JavaVＭStackSOF.java:14)
+ ........
