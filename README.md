@@ -11,6 +11,7 @@ java JVM 练习笔记
  通过参数-XX:+HeapDumpOnOutOfMemoryError可以让虚拟机在出现内存溢出异常时Dump出当前的内存堆转储快照以便事后进行分析。
  
  运行结果：
+ 
  java.lang.OutOfMemoryError: Java heap space
  
 Dumping heap to java_pid12344.hprof ...
@@ -35,6 +36,9 @@ OOM异常很 常见，当出现java堆内存溢出时，异常堆栈信息“ ja
 运行结果：
 
 stack length:1541
+
 Exception in thread "main" java.lang.StackOverflowError
+
 	at JavaVＭStackSOF.stackLeak(JavaVＭStackSOF.java:14)
+	
  ........
