@@ -43,4 +43,17 @@ Exception in thread "main" java.lang.StackOverflowError
 
 	at JavaVＭStackSOF.stackLeak(JavaVＭStackSOF.java:14)
 	
- ........
+--------------------------------------------------------
+
+3.VolatileTest目录
+
+测试volatile变量的用法
+
+两种特性：
+
+ 1.保证变量对所有线程的可见性，即当一个线程修改了这个变量的值，新值对于其他线程来说是立即可见的。
+ 
+ 2.禁止指令重排序优化。
+ 
+ volatile很容易被误用， volatile 变量不能用作线程安全计数器，因为不是原子操作。
+ 
